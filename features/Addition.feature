@@ -12,3 +12,8 @@ Feature: Addition
 		Given I have already added 50 and 70
 		When I add 30
 		Then the result should be 150
+
+	Scenario: Add the same number multiple times
+		Given I have already added 50 and 70
+		When I add without another number twice more
+		Then the result should be 260

@@ -26,3 +26,7 @@ When(/^I add (\d+)$/) do |number|
   @total = @adding_machine.add
 end
 
+When(/^I add without another number twice more$/) do
+  @adding_machine.add
+  @total = @adding_machine.add
+end
