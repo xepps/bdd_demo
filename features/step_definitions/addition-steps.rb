@@ -8,11 +8,11 @@ Given(/^I have entered (\d+)$/) do |number|
 end
 
 When(/^I add them together$/) do
-	@total = @adding_machine.add
+	@adding_machine.add
 end
 
 Then(/^the result should be (\d+)$/) do |total|
-  expect(@total).to eq(total.to_i)
+  expect(@adding_machine.total).to eq(total.to_i)
 end
 
 Given(/^I have already added (\d+) and (\d+)$/) do |number_1, number_2|
@@ -23,10 +23,10 @@ end
 
 When(/^I add (\d+)$/) do |number|
   @adding_machine = push_number(@adding_machine, number.to_i)
-  @total = @adding_machine.add
+  @adding_machine.add
 end
 
 When(/^I add without another number twice more$/) do
   @adding_machine.add
-  @total = @adding_machine.add
+  @adding_machine.add
 end

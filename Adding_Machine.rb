@@ -1,5 +1,5 @@
 class Adding_Machine
-	
+
 	def input number
 		if @total == nil
 			@total = number
@@ -10,5 +10,9 @@ class Adding_Machine
 
 	def add
 		@total += @next
+	end
+
+	def total
+		@total
 	end
 end
