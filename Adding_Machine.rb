@@ -1,11 +1,13 @@
 class Adding_Machine
 
+	@total = 0
+
+	def clear
+		@total = 0
+	end
+
 	def input number
-		if @total == nil
-			@total = number
-		else
-			@next = number
-		end
+		@next = number
 	end
 
 	def add
