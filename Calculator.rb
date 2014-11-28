@@ -4,11 +4,11 @@ class Calculator
 		@numbers = Array.new
 	end
 
-	def push number
+	def add number
 		@numbers << number
 	end
 
-	def total
+	def equals
 		total = 0
 		@numbers.each do |number|
 			total += number
