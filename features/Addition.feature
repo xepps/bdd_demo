@@ -1,11 +1,10 @@
 Feature: Addition
-	In order to avoid silly mistakes
-	As a maths idiot
-	I want to be told the sum of two numbers
+	In order to avoid mistakes
+	As an accountant
+	I want to be able to add numbers up quickly
 
 	Scenario: Add two numbers
-		Given I have entered 50 into the calculator
-		And I have entered 70 into the calculator
+		Given the numbers 50 and 70
 		When I add them together
 		Then the result should be 120
 
