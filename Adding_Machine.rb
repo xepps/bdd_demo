@@ -14,6 +14,10 @@ class Adding_Machine
 		@total += @next
 	end
 
+	def take
+		@total -= @next
+	end
+
 	def total
 		@total
 	end
